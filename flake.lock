@@ -1,0 +1,53 @@
+{
+  "nodes": {
+    "jaeger-x86_64-darwin": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-+y93OUazbHl7hBUWewv7yNNzZv59jp/ZjOIn68c0+yk=",
+        "type": "tarball",
+        "url": "https://github.com/jaegertracing/jaeger/releases/download/v1.35.1/jaeger-1.35.1-darwin-amd64.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/jaegertracing/jaeger/releases/download/v1.35.1/jaeger-1.35.1-darwin-amd64.tar.gz"
+      }
+    },
+    "jaeger-x86_64-linux": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-T2f7+xGLKYDzEW9iarph6agG2gKDoqik0XNTEwAHYYM=",
+        "type": "tarball",
+        "url": "https://github.com/jaegertracing/jaeger/releases/download/v1.35.1/jaeger-1.35.1-linux-amd64.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://github.com/jaegertracing/jaeger/releases/download/v1.35.1/jaeger-1.35.1-linux-amd64.tar.gz"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1661262176,
+        "narHash": "sha256-42FXNd2B0QECaULG0Vx+oYzQ9euKcmlg2gmX2D+HbKI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "b9fd420fa535fd254c6f1f26df770b32a9dc98b4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "jaeger-x86_64-darwin": "jaeger-x86_64-darwin",
+        "jaeger-x86_64-linux": "jaeger-x86_64-linux",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
